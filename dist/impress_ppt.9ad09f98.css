@@ -1,0 +1,466 @@
+/*
+    We start with a good ol' reset.
+    That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
+    You can probably argue if it is needed here, or not, but for sure it
+    doesn't do any harm and gives us a fresh start.
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  background-image: url("/tingey-injury-law-firm-6s.c6ccd7a3.jpg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+i,
+em {
+  font-style: italic;
+}
+/* ------------ general -------------*/
+
+.step {
+  padding: 48px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.decorate {
+  color: coral;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  border: 2px solid coral;
+  left:40%; 
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 3px 5px;
+}
+
+.decorate::before{
+  content: "";
+  display: block;
+  background-color: coral;
+  position: absolute;
+  width: 350px;
+  height: 3px;
+  left: -370px;
+  top: 50%; 
+}
+
+.decorate::after{
+  content:"";
+  display: block;
+  background-color: coral;
+  position: absolute;
+  width: 350px;
+  right: -370px;
+  top: 50%;
+  height: 3px;
+}
+
+.color_my_background {
+  background-color: coral;
+  color: white;
+}
+
+.slide {
+  background-color: white;
+  box-shadow: 0 0 14px 0.01px black;
+  position: relative;
+  margin: 0 0;
+  width: 1100px;
+  height: 600px;
+  transition: opacity 0.8s;
+}
+
+.slide.future {
+  opacity: 0;
+}
+
+.slide.past {
+  opacity: 0;
+}
+.substep {
+  opacity: 0;
+}
+.substep.substep-visible {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.slide_header {
+  color: coral;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 7px;
+  padding: 7px 0;
+  text-align: center;
+  border: 4px solid coral;
+}
+
+/* Progress bar */
+.impress-progress {
+  position: absolute;
+  left: 59px;
+  bottom: 1px;
+  text-align: left;
+  font-size: 10pt;
+  opacity: 0.6;
+}
+.impress-enabled .impress-progressbar {
+  position: absolute;
+  right: 048px;
+  bottom: 9px;
+  left: 118px;
+  border-radius: 7px;
+  border: 2px solid rgba(100, 100, 100, 0.2);
+}
+.impress-progressbar {
+  right: 118px;
+}
+.impress-progressbar div {
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background: rgba(75, 75, 75, 0.4);
+  transition: width 1s linear;
+}
+.impress-enabled .impress-progress {
+  position: absolute;
+  left: 59px;
+  bottom: 1px;
+  text-align: left;
+  opacity: 0.6;
+}
+
+div.myrow {
+  padding: 40px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 12px 0.1px gray;
+  background-color: rgba(250, 250, 250, 0.5);
+  border-radius: 9px;
+  margin: 20px;
+}
+
+.set_aside_left {
+  width: 600px;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  text-align: center;
+}
+
+/* ---- step1---------*/
+
+#step1 {
+  background-image: url("/step1_background_5_edited.881f23ff.jpg");
+  background-size: 1100px 600px;
+  background-repeat: no-repeat;
+  line-height: 1.3;
+}
+
+#step1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#step1 div.myrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#step1 h2 {
+  text-align: center;
+  width: 80%;
+  display: block;
+  font-weight: 600;
+  border-radius: 9px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  /* font-family: 'Source Code pro',monospace; */
+}
+
+#step1.present {
+  opacity: 1;
+}
+
+/* --------- step2 ----------- */
+
+#step2 h1 {
+  font-weight: 900;
+  transition: 1s transform;
+}
+
+#step2.present h1 {
+  transform: scale(1.5, 1.5);
+}
+
+#step2.past h1 {
+  transform: scale(1.5, 1.5);
+}
+
+#step2 span {
+  transition: 1s display;
+  transition-delay: 2s;
+}
+
+#step2 span.after {
+  display: none;
+}
+
+#step2.future span.after {
+  display: none;
+}
+
+#step2.past span.after {
+  display: inline;
+}
+
+#step2.past span.before {
+  display: none;
+}
+
+/* ---------- step3 ---------- */
+
+/*
+#step3 div span.substep{
+  opacity: 1;
+  transition: background-color 0.5s;
+}
+
+#step3 div span.substep-visible{
+  background-color:#b2ebf2;
+}
+
+#step3 div sup{
+  font-size:15px
+}
+
+#step3 h4.substep{
+  margin-left:20px;
+  color: black;
+}
+*/
+
+#step3.present {
+  opacity: 1;
+}
+
+#step3.past {
+  opacity: 0;
+}
+
+/* ------- step4 --------- */
+
+#step4.present {
+  opacity: 1;
+}
+
+#step4.past {
+  opacity: 0;
+}
+
+/* --------- step5 ---------- */
+
+#step5.present {
+  opacity: 1;
+}
+
+#step5.past {
+  opacity: 0;
+}
+
+/* -------- step6 ----------- */
+
+#step6.pressent {
+  opacity: 1;
+}
+
+#step6.past {
+  opacity: 0;
+}
+
+/* --------- step8 ----------*/
+
+#step8 span.substep{
+  display: none;
+}
+
+#step8 span.substep-visible{
+  display: inline;
+}
+
+/* ------- step9 -------- */
+#step9 .decorate{
+ left: 34%;  
+}
+
+/* ------- step10 ------- */
+#step10 div.img_container{
+  display: flex;
+  justify-content: center;
+}
+#step10 img{
+  width: 80%;
+  display: inline-block;
+}
+
+/* -----step12 ---- */
+
+
+/*# sourceMappingURL=/impress_ppt.9ad09f98.css.map */

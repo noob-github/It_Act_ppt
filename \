@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>It Act Presentation</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <!-- Main impress div -->
+
+    <div class="container">
+      <div
+        id="impress"
+        data-transition-duration="500"
+        data-width="1920px"
+        data-height="1080px"
+        data-max-scale="3"
+        data-min-scale="-3"
+      >
+        <div class="step slide" id="step1" data-x="0" data-y="0">
+          <div class="myrow">
+            <h2>Admissiblity of electronic records as evidence (under section 65B) </h2>
+          </div>
+        </div>
+        <!-- 
+        <div class="step slide" id="step2" data-x="1200" data-y="0">
+          <h1>my second slide</h1>
+        </div>
+
+        <div id="step3" class="step slide" data-x="2400" data-y="0" >
+          <h1>My third slide</h1>
+          <h3 class="substep"> Point 1</h3>
+          <h3 class="substep"> Point 2</h3>
+          <h3 class="substep"> Point 3</h3>
+        </div>
+        -->
+
+        <div class="step" id ="step2" data-scale="4" data-x="3000" data-y="0" style="width: 600px;">
+          <h1  class="set_aside_left"><span class="before">Before</span><span class="after">After</span> IT ACT 2000</h1>
+        </div>
+
+        <div id="step3" class="step slide" data-x="1350" data-y="-1000">
+          <h3 class="slide_header">What is evidence</h3>
+          <hr/>
+          <div class="slide_body">
+            <br/>
+            <h4 class="decorate">Section 3</h4>
+            <h5 class="substep"> </br> It means and includes - </h5>
+            <ol>
+            <br/>
+              <li class="substep"><h5>All statements which the Court permits or requires to be made before it by witnesses, in relation to matters of fact under inquiry;
+                such statements are called oral evidence</h5></li>
+              </br>
+              <li class="substep"><h5>all documents produced for the inspection of the Court;
+                such documents are called documentary evidence.</h5></li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="step4" class="step slide" data-x="2725" data-y="-1000">
+          <h4 class="decorate">Section 62</h4>  
+          <br/>
+          <br/>
+          <div class="slide_body">
+           <h5 class="substep"><span style="background-color: coral; color:white ;">Primary evidence</span> means the document itself produced for the inspection of the Court</h5> 
+           <div class="substep">
+           <br/>OR<br/><br/>
+           <h5><span style="background-color: coral; color:white ;">Primary evidence</span> means the orignal document presented to the court its inspection</h5> 
+           </div>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <h4 class="decorate substep">Section 63</h4>
+          <br/>
+          <br/>
+          <h5 class="substep"><span style="background-color: coral; color: white;">Secondry evidence</span> means and includes— </h5>
+          <br/>
+          <div class="slide_body">
+            <ol style="list-style-type: none;">
+              <li><h5 class="substep">2) Copies made from the original by mechanical processes which in themselves insure the accuracy of the copy, and copies compared with such copies;
+                </h5></li>
+                <br/>
+              <li><h5 class="substep">3) Copies made from or compared with the original;</h5></li>
+            </ol>
+          </div>
+        </div>
+        
+        <div id="step5" class="step slide" data-x="4100" data-y="-1000">
+          <h4 class="decorate ">Section 64</h4> 
+          <br/>
+          <br/>
+          <div class="slide_body">
+            <h5 class="substep">Documents <span class="color_my_background">must be proved by primary evidence</span> except in the cases hereinafter mentioned.</h5>
+            <div class="substep">
+            <br/>OR<br/><br/>
+            <h5 >Primary evidence is main source of evidence while secondary is alternate source of evidence </h5>
+            </div>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <h4 class="decorate substep">Section 65</h4>
+          <br/>
+          <br/>
+          <div class="slide_body">
+            <h5 class="substep">d) when the original is of such a nature as not to be easily movable;</h5>
+          </div>
+        </div>
+        <!--
+        <div id="step6" class="step slide" data-x="5400" data-y="-1000">
+        </div>-->
+        
+        <div id="step7" class="step" data-x="3000" data-y="0" data-scale="4">
+        </div>
+
+        <div id="step8" class="step slide" data-x="1350" data-y="1000">
+          <h3 class="slide_header">What is evidence</h3>
+          <hr/>
+          <div class="slide_body">
+            <br/>
+            <h4 class="decorate">Section 3</h4>
+            <h5> </br> It means and includes - </h5>
+            <ol>
+            <br/>
+              <li><h5>All statements which the Court permits or requires to be made before it by witnesses, in relation to matters of fact under inquiry;
+                such statements are called oral evidence</h5></li>
+              </br>
+              <li><h5>All documents <span class="substep color_my_background">including electronic records</span> produced for the inspection of the Court;
+                such documents are called documentary evidence.</h5></li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="step9" class="step slide" data-x="2725" data-y="1000">
+          <h3 class="slide_header">Electronic Records</h3>
+          <hr/>
+          <div class="slide_body">
+            <br/>
+            <h4 class="decorate">Under IT act (2)(t)</h4>
+            <h5><br/>Electronic record means data, record or data generated, image or sound stored, received or
+            sent in an electronic form or micro film or computer generated micro fiche</h5>
+            <div class="substep">
+              <br/>OR<br/><br/>
+              <h5>Electronic records are information or data files, created and stored in digitized form through the use of computers and applications software.</h5>
+            </div>
+            <br/><br/>
+            <h5 class="substep">Examples are Pendrives,e-mail messages, word- processed documents, electronic spreadsheets, digital images and databases</h5>
+          </div>
+        </div>
+
+        <div id="step10" class="step slide" data-x="4100" data-y"1000">
+          <h3 class="slide_header">Section 65B</h3>
+          <br/>
+          <h4 class="decorate">Sub-section 1</h4>
+          <div class="slide_body">
+            <br/>
+            <h5> Notwithstanding anything contained in this act,</h5>
+            <br/>
+            <div class="img_container">
+            <img src="./images/table_65b.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div id="step11" class="step slide" data-x="5400" data-y="1000">
+          <h5><span class="color_my_background">IF</span> the condition mentioned in <span class="color_my_background">this section</span> are satisfied in relation to
+            <br/><b>1)Information</b><br/><b>2)Computer in question</b><br/><hr/> and shall be admissible in any proceedings <br/><b>1)without further question</b>
+            <br/><b>2)without production of original</b></br><hr/>
+            <span class="color_my_background">As</span> evidence of <br/><b>a)Contents of orignal</b></br><b>b)Of any facts stated therein - of which direct evidence to be admissible.
+          </section> </h5>
+        </div>
+
+        <div id="step12" class="step slide" data-x="7000" data-y="1000">
+          <h4 class="decorate">Sub-section 2</h4>
+          <br/>
+          <div class="slide_body">
+            <br/>
+            <h5>The conditions mentioned in sub-section(1) would be classified as :</h5>
+            <br/>
+            <h5>a) The computer output containing the information was produced by the computer during the period over which the computer ,<b>was used regularly</b> to store or process information for the purposes of any activities regularly carried on over that period <b>by the person having lawful control</b> over the use of the computer;</h5>
+            <br/>
+            <h5>b) During the said period of time , the <b>information</b> was regularly fed in ordinary course of the said activity into the computer</h5>
+            <br/>
+            <h5>c) The computer from which the output was generated was <b>operating properly</b> through out the said period.If not, then in respect of any period in which it was not operating properly or was out of operation , was not such as to affect the electronic record or accuracy of its content .</h5>
+            <br/>
+            <h5>d) The output which is generated is derived from the input i.e. <b>information fed</b> in ordinary course of period</h5>
+          </div>
+        </div>
+
+          <div id="step13" class="step slide" data-x="7400" data-y="1000">
+            <h4 class="decorate">Sub-section 3</h4>
+            <br/>
+            <div class="slide_body">
+            </div>
+          </div>
+
+          <div id="step14" class="step slide" data-x="8800" data-y="1000">
+            <h4 class="decorate">Sub-section 4</h4>  
+            <div class="slide_body">
+              slide
+            </div>
+          </div>
+
+          <div id="step15" class="step slide" data-x="9600" data-y="1000">
+            <h4 class="decorate">Sub-section 5</h4>  
+          </div>
+        </div>
+    </div>
+
+    <!-- progress bar --->
+    <div class="impress-progressbar"><div></div></div>
+    <div class="impress-progress"></div>
+
+    <!-- impress js -->
+    <script src="./impress.js" charset="utf-8"></script>
+    <script charset="utf-8">
+      impress().init();
+    </script>
+  </body>
+</html>
