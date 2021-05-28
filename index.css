@@ -255,14 +255,14 @@ h5 {
 .impress-progress {
   position: absolute;
   left: 59px;
-  bottom: 1px;
+  bottom: 9px;
   text-align: left;
   font-size: 10pt;
   opacity: 0.6;
 }
 .impress-enabled .impress-progressbar {
   position: absolute;
-  right: 048px;
+  right: 348px;
   bottom: 9px;
   left: 118px;
   border-radius: 7px;
@@ -281,9 +281,37 @@ h5 {
 .impress-enabled .impress-progress {
   position: absolute;
   left: 59px;
-  bottom: 1px;
+  bottom: 5px;
   text-align: left;
+  font-size: 11pt;
   opacity: 0.6;
+}
+
+/* Toolbar plugin */
+.impress-enabled div#impress-toolbar {
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    opacity: 0.2;
+    z-index: 10;
+    transition: 0.5s opacity;
+}
+
+.impress-enabled div#impress-toolbar:hover {
+  opacity: 0.6;
+}
+.impress-enabled div#impress-toolbar > span {
+    margin-right: 10px;
+}
+.impress-enabled div#impress-toolbar.impress-toolbar-show {
+    display: block;
+}
+.impress-enabled div#impress-toolbar.impress-toolbar-hide {
+    display: none;
+}
+
+.impress-enabled div#impress-toolbar button#impress-autoplay-playpause{
+  display: none;
 }
 
 div.myrow {
@@ -460,4 +488,18 @@ div.myrow {
   display: inline-block;
 }
 
-/* -----step12 ---- */
+/* -----step16----- */
+#step16 h1 {
+font-weight: 900;
+transition: 1s transform;
+font-size: 68px;
+}
+
+#step16.present h1 {
+ transform: scale(1.5, 1.5);
+}
+
+#step16.past h1 {
+transform: scale(1, 1);
+}
+  
